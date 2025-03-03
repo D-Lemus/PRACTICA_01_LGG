@@ -6,6 +6,34 @@
     <title>INICIO P01</title>
     </head>
     <body>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="navId">
+            <li class="nav-item dropdown"> 
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="page_a.html">Action</a>
+                    <a class="dropdown-item" href="page_b.html">Another action</a>
+                    <div class="dropdown-divider"></div>
+                   
+                </div>
+            </li>
+
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+        
+        <script>
+            $('#navId a').click(e => {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        </script>
         <p>Esto es un párrafo</p>
         <h1>Esto es un header</h1>
     </body>
